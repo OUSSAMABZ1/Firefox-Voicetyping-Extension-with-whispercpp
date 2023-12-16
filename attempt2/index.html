@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Flask Test</title>
+</head>
+<body>
+    <button onclick="sendData()">Send Data</button>
+
+    <script>
+        function sendData() {
+            var formData = new FormData();
+            formData.append('param1', 'value1');
+            formData.append('param2', 'value2');
+
+            fetch('/your_endpoint', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Server Response:', data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

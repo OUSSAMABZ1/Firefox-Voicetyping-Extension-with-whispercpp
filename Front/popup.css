@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    color: black;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 0;
+}
+
+#container{
+    width:200px;
+    height: 200px;
+    background-color: white;
+
+}
+
+#language{
+    position: absolute;
+    left: 140px;
+    top: 6px;
+}
+#language form select{
+    background-color: white;
+    border: none;
+    font-size: 10px;
+    border-radius: 0px;
+}
+
+
+#record{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+#record button{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+}
+#record button:hover{
+    background-color: crimson;
+}
+#record button img{
+    background-color: transparent;
+    height: 75px;
+}
+
+#copyright{
+    position: absolute;
+    top: 180px;
+    left: 87px;
+}
+#copyright p{
+    font-weight: 700;
+    font-size: 8px;
+}
+#copyright p span img{
+    width: 8px ;
+}
+
+
+.metric1 {
+    padding: 10%;
+}
+  
+.metric1 svg {
+    max-width: 100%;
+    transform: rotateZ(90deg);
+    height: 60px;
+    position: absolute;
+    left: 120px;
+    top: 93px;
+}
+  
+.metric1 path {
+    stroke-width: 50;
+    stroke: gray;
+    fill: none;
+}
+  
+.metric2 {
+    padding: 10%;
+}
+  
+.metric2 svg {
+    max-width: 100%;
+    transform: rotateZ(90deg);
+    height: 40px;
+    position: absolute;
+    left: 147px;
+    top: 98px;
+}
+  
+.metric2 path {
+    stroke-width: 60;
+    stroke: gray;
+    fill: none;
+}
+
+.metric3 {
+    padding: 10%;
+}
+  
+.metric3 svg {
+    max-width: 100%;
+    transform: rotateZ(90deg);
+    height: 20px;
+    position: absolute;
+    left: 172px;
+    top: 103px;
+}
+  
+.metric3 path {
+    stroke-width: 95;
+    fill: none;
+}
+
+.metric4 {
+    padding: 10%;
+}
+  
+.metric4 svg {
+    max-width: 100%;
+    transform: rotateZ(90deg) scaleY(-1);
+    height: 60px;
+    position: absolute;
+    left:-37px;
+    top: 93px;
+}
+  
+.metric4 path {
+    stroke-width: 50;
+    fill: none;
+}
+
+.metric5 {
+    padding: 10%;
+}
+  
+.metric5 svg {
+    max-width: 100%;
+    transform: rotateZ(90deg) scaleY(-1);
+    height: 40px;
+    position: absolute;
+    left: -25px;
+    top: 98px;
+}
+  
+.metric5 path {
+    stroke-width: 60;
+    fill: none;
+}
+
+.metric6 {
+    padding: 10%;
+}
+  
+.metric6 svg {
+    max-width: 100%;
+    transform: rotateZ(90deg) scaleY(-1);
+    height: 20px;
+    position: absolute;
+    left: -9px;
+    top: 103px;
+}
+  
+.metric6 path {
+    stroke-width: 95;
+    fill: none;
+}
+
+.participation path{
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+.animate path{
+    animation-name: clink;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+}
+@keyframes clink {
+    0% {stroke: rgba(0, 0, 0, 0.1);}
+    50% {stroke: crimson;}
+    100% {stroke: rgba(0, 0, 0, 0.1);}
+  }
+  

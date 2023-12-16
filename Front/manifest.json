@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "My Extension",
+    "version": "1.0",
+    "description": "Connects to Python server",
+    "browser_action": {
+      "default_icon": "icon.jpg",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "http://localhost:8000/"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["popup.js"]
+      }
+    ]
+  }
+  

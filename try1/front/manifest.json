@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "VoiceTyping",
+    "version": "1.0",
+    "description": "Connects to Python server",
+    "browser_action": {
+      "default_icon": "icon.jpg",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "microphone",
+      "http://localhost:8000/",
+      "http://localhost:8000/upload"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["popup.js"]
+      }
+    ]
+  }
+  
