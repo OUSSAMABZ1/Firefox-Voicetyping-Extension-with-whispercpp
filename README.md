@@ -1,6 +1,6 @@
 # Développement d'une Extension Firefox pour la Reconnaissance Vocale à l'aide de la librairie Whispercpp
 
-** Les codes sont dans la branche master
+**Les codes sont dans la branche master**
 
 L'interface utilisateur propose une expérience intuitive permettant aux utilisateurs de sélectionner la langue de leur choix (Anglais/Français) via le menu déroulant et de démarrer l'enregistrement vocal en 
 appuyant sur le bouton correspondant. Une fois l’utilisateur termine l’enregistrement - en cliquant sur le bouton pour une deuxième fois-, l'audio et la langue choisie sont envoyés vers un serveur Flask local 
